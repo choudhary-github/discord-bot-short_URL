@@ -41,9 +41,7 @@ client.addListener("messageCreate", async (message) => {
   return null;
 });
 
-client.login(
-  "MTMwMjU3MzA0MDg5MDI4MTk5NA.GM-qA3.KdZtKg6VSOCYlP06RoZ9-iX7deoLT-vSZUdraw"
-);
+client.login(process.env.DISCORD_BOT_TOKEN);
 
 app.listen(3000, () => {
   console.log("listening on port 3000");
